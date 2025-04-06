@@ -1,4 +1,8 @@
-const colorsForSnow = [
+function invokeSnoweffect(){
+  const snowContainer = document.createElement('div');
+snowContainer.classList.add('snow-container');
+document.body.appendChild(snowContainer);
+  const colorsForSnow = [
     '#04ecf0',
     '#03d4d8',
     '#03bcc0',
@@ -34,5 +38,9 @@ const colorsForSnow = [
     flake.style.setProperty('--drift', drift);
     flake.style.backgroundColor = colorsForSnow[i % colorsForSnow.length];
 
-    document.body.appendChild(flake);
+    // document.body.appendChild(flake);
+    snowContainer.appendChild(flake);
+
   }
+}
+invokeSnoweffect()
