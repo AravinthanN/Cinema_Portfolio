@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Aravinthan</title>
+   <link rel="stylesheet" href="style.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    
+    <div class="portfolioContainer">
+        <div class="row-1">
+        
+            <video autoplay muted loop>
+                <source src="logo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about" onclick="navigateAboutContact()">About</a></li>
+                    <li><a href="#contact" onclick="navigateAboutContact()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+            </nav>
+            <i class="fas fa-bars" id="bar" onclick="openmenu()"></i>
+            
+        </div>
+
+        <div class="row-2">
+             <div class="col-1" id="col-1">
+                  <h5>Hi, i'm  <span >Aravinthan</span>, an Entertainer </h5>
+             </div>
+             <!-- //onclick="swipe()" -->
+             <div class="col-2" id="swipeable-element" >
+                <a href="https://www.instagram.com/ig_.aravinthan?utm_source=qr&igsh=MXhtOGhka2ttNDdtMA==" target="_blank"><img  class="img"  src="photos/me.jpg" alt=""/></a>
+             </div>
+             
+
+             <!-- mobile view image -->
+
+             <div class="col-2-non-swipeable" id="non-swipeable-element" >
+                <a href="https://www.instagram.com/ig_.aravinthan?utm_source=qr&igsh=MXhtOGhka2ttNDdtMA==" target="_blank"><img  class="img"  src="photos/me.jpg" alt=""/></a>
+             </div>
+             <div class="col-1-non-swipeable" id="col-1">
+                <h6>Hi, i'm  <span >Aravinthan</span>, an Entertainer</h6>
+           </div>
+           
+           
+
+             <div class="about" id="about">
+
+                <h4>About me</h4>
+
+                <div style="display:flex;""><p>
+                    I'm just a guy who loves to entertain and inspire
+through my art, bringing ideas to life.
+                </p>
+                <img width="100px" height="80px" src="photos/chill.png" alt=""/></div>
+
+                <div class="tab">
+                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('works')">Works</p>
+                    <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                    <!-- <p class="tab-links" onclick="opentab('projects')">Projects</p> -->
+                </div>
+                <span class="titleForMobile"> <p> Skills </p> </span>
+                <div class="tab-contents active-contents" id="skills">
+                    <ul>
+                        <li>
+                            <div class="skill-tab"> 
+                                <div class="skill-title">
+                                    <h4>Script writing/ screenplay writing-</h4>
+                                    <h6>73%</h6>
+                                </div>
+                                
+                                <div class="barforskill">
+                                    <span class="html" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-tab"> 
+                                <div class="skill-title">
+                                    <h4>Direction</h4>
+                                    <h6>75%</h6>
+                                </div>
+                                
+                                <div class="barforskill" >
+                                    <span class="css" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-tab"> 
+                                <div class="skill-title">
+                                    <h4>Cinematography</h4>
+                                    <h6>45%</h6>
+                                </div>
+                                
+                                <div class="barforskill">
+                                    <span class="js" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-tab"> 
+                                <div class="skill-title">
+                                    <h4>Creativity</h4>
+                                </div>
+                                <div class="barforskill">
+                                    <span class="java" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-tab"> 
+                                <div class="skill-title">
+                                    <h4>Artistic</h4>
+                                </div>
+                                <!-- <div class="barforskill">
+                                    <span class="java" ></span>
+                                </div> -->
+                                <div class="project-tab">
+                                    <img id="project-image" src="photos/gp.jpeg" alt="">
+
+                                    <div class="project-content">
+                                        <h3>Thoduleyy</h3>
+                                        <p>wanna know how artistic I am
+                                            ley..open panni paaruley
+                                            (contact☝️)</p>
+                                            <a href="https://www.instagram.com/ig_.aravinthan?utm_source=qr&igsh=MXhtOGhka2ttNDdtMA==" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                                              </svg></a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <span class="titleForMobile"> <p> Works </p> </span>
+                <div class="tab-contents" id="works">
+                    <ul>
+                        <li><h5>2019-2023</h5><span class="education-span">I HAVE DIRECTED,EDITED AND CINEMATOGRAPHED
+                            FOUR DIFFERENT GENRE SHORT FILMS👇</li>
+                        <li>
+                            <div>
+                                <iframe width="100%" height="400" 
+                                        src="https://www.youtube.com/embed/Omii0NpRPbI" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                </iframe>
+                                <p class="works-text">Above one is my good work</p>
+                              </div>
+                              
+                        </li>
+                        <li><div style="margin-bottom: 5px;">
+                            <p class="works-text">Wanna waste 10 mins of your time,try below
+                                one ,but an unique one
+                            </p>
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/qHaXqjfVojQ" title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                            </iframe>
+                            <!-- <a href="https://youtu.be/qHaXqjfVojQ?si=nN3XwVcVA9iuuhyM
+                            ">click</a> -->
+                           
+                        </div></li>
+                    </ul>
+                </div>
+                <span class="titleForMobile"> <p> Skills </p> </span>
+                <div class="tab-contents" id="Hobbies">
+                    <ul>
+                        <li><div><p>Watching Films
+                        </p></div></li>
+                        <li><div><p>Re-watch Fav Films
+                        </p></div></li><li><div><p>Reading Manga
+                        </p></div></li><li><div><p>Cricket
+                        </p></div></li><li><div><p>Living in my imaginary world
+                        </p></div></li>
+
+                    </ul>
+</div>
+                <span class="titleForMobile"> <p> Projects </p> </span>
+                <div class="tab-contents" id="projects">
+
+                    <div class="project-tab">
+
+                        <img id="project-image" src="https://media.istockphoto.com/id/1323574156/photo/dystopian-work-from-home-concept-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=r-iY1nwku3V2qms_2pNh89wuKXpp-1iHmU3F50WBjIA=" />
+                       
+                        <div class="project-content">
+                             <h3>API e-Commerce</h3>
+                             <p>its a customer module ecommerce website designed and developed using HTML,CSS,JS,REACT<br>(link is not ready yet)
+                             </p>
+                             <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                              </svg></a>
+                        </div>
+
+                    </div>
+
+                </div>
+             </div>
+        </div>
+    
+
+    <div  class="contact" id="contact">
+          <div class="container">
+              <div class="row-1">
+                   <div class="contact-left">
+                       <h3>Contact me</h3>
+                       <p><i class="fa fa-paper-plane"></i>entertainmentluno@gmail.com</p>
+                       <p><i class="fa fa-phone"></i>8637435264</p>
+                       <div class="social-icons">
+                          <!-- <a href="https://www.linkedin.com/in/aravinthan-n-a655251b9?trk=contact-info" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a> -->
+                          <a href="https://www.instagram.com/ig_.aravinthan?utm_source=qr&igsh=MXhtOGhka2ttNDdtMA==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                          <!-- <a href=""><i class="fas fa-facebook"></i></a> -->
+                       </div>
+
+                       <!-- <a href="ARAVINTHAN N.pdf" download  class="btn btn1">Download CV</a> -->
+                    </div>
+                   <div class="contact-right">
+                       <form action="https://api.web3forms.com/submit" method="POST" >
+                        <input type="hidden" name="access_key" value="3681b4ed-8573-4994-9962-697188e31fb5">
+                          <input type="text" name="Name" placeholder="Your name" required>
+                          <input type="email" name="email" placeholder="your email" required>
+                          <input type="text" name="subject" placeholder="Subject" required>
+                          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                          <button type="submit" class="btn btn1">send</button>
+                           <!-- <input class="btn btn1" type="submit" value="send"> -->
+                       </form>
+                   </div>
+              </div> 
+          </div>
+    </div>
+</div>
+
+     <script>
+
+        // function barToggle(){
+
+        //     const bar = document.querySelector("nav");
+        //     bar.classList.toggle('nav-display')
+        //     const row_1 = document.querySelector(".row-1")
+        //     row_1.style.display="flex";
+        //     row_1.style.flexDirection="column"
+        // }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+        const navigateAboutContact = ()=>{
+            const col_one = document.getElementById("col-1");
+            col_one.style.display="none"
+
+            const imgdiv =document.getElementsByClassName("col-2")
+            imgdiv[0].classList.toggle("toggling")
+            const image = document.getElementsByClassName("img")
+            image[0].classList.toggle("imagetoggling")
+            console.log(image[0].style)
+
+            const about = document.getElementById("about");
+            const contacts = document.getElementById("contact")
+            
+            if(about.style.display !== "inline"){
+                about.style.display="inline"
+                contacts.style.display="block";
+            }
+          
+        }
+
+        const swipe = ()=>{
+            
+         if(window.innerWidth >600 ){
+            const col_one = document.getElementById("col-1");
+
+            const contacts = document.getElementById("contact")
+            
+
+            
+            const imgdiv =document.getElementsByClassName("col-2")
+            imgdiv[0].classList.toggle("toggling")
+            const image = document.getElementsByClassName("img")
+            image[0].classList.toggle("imagetoggling")
+            console.log(image[0].style)
+            
+
+            if(col_one.style.display !== "none"){
+             col_one.style.display="none"
+
+            }
+            else{
+                col_one.style.display="flex"
+            }
+            
+            const about = document.getElementById("about");
+            
+            if(about.style.display !== "inline"){
+                about.style.display="inline"
+                contacts.style.display="block";
+            }
+            else{
+                about.style.display="none"
+                contacts.style.display="none";
+            }
+             }
+        }
+
+        const opentab= (value)=>{
+             console.log("hi");
+            const tablinks = document.getElementsByClassName("tab-links")
+            const tabcontents = document.getElementsByClassName("tab-contents")
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-contents")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(value).classList.add("active-contents")
+        }
+        // let start = 0, end=0;
+        
+        // const swiperow = document.getElementById("swipeable-element");
+
+        // let moveable= false;
+
+        // let events = {
+        //     mouse:{
+        //         down:"mousedown",
+        //         move:"mousemove",
+        //         up:"mouseup"
+        //     },
+        //     touch:{
+        //         down:"touchstart",
+        //         move:"touchmove",
+        //         up:"touchend"
+        //     }
+        // }
+
+        // let device ="";
+
+        // const isTouch = ()=>{
+
+        //     try{
+        //         document.createEvent("touchevent");
+        //         device="touch"
+        //         return true
+        //     }
+        //     catch(error){
+        //         device="mouse"
+        //         return false
+        //     }
+        // }
+        
+        // isTouch();
+        
+        // swiperow.addEventListener(events[device].down,
+        // (e)=>{
+        //     e.preventDefault()
+        //    start = !isTouch() ? e.pageX : e.touches[0].pageX
+        // //    console.log(start)
+        //    moveable =true
+        // }
+        // )
+
+        // swiperow.addEventListener(events[device].move,
+        //     (e)=>{
+        //         if(moveable){
+        //             e.preventDefault();
+        //             let newStart = !isTouch()? e.pageX : e.touches[0].pageX
+        //             swiperow.style.marginLeft = (start - newStart) + "px";
+        //             console.log(swiperow.style.marginLeft)
+        //             start = newStart
+                    
+                    
+        //         }
+        //     }
+        // )
+
+        // swiperow.addEventListener(events[device].up,
+        //    (
+        //     stopMovement = (e) =>{
+        //         moveable = false
+        //     }
+        //    )
+        // )
+
+        // swiperow.addEventListener("mouseleave",stopMovement)
+
+     </script>
+     <script src="../Cinema_Portfolio/js.js"></script>
+</body>
+</html>
