@@ -13,7 +13,7 @@
 <body>
     
     <div class="portfolioContainer">
-        <div class="row-1">
+        <div class="row-1" style="width:100%">
         
             <!-- <video autoplay muted loop>
                 <source src="logo.mp4" type="video/mp4">
@@ -31,9 +31,9 @@
             
         </div>
 
-        <div class="row-2">
+        <div class="row-2" >
              <div class="col-1" id="col-1">
-                  <h5>Hi, i'm  <span >Aravinthan</span>, an Entertainer </h5>
+                  <h5>Hi, i'm  <span >Aravinthan</span>, an Entertainer <span class="tagline">not a nerd</span></h5>
                   
              </div>
              <!-- //onclick="swipe()" -->
@@ -48,7 +48,7 @@
                 <a href="https://www.instagram.com/ig_.aravinthan?utm_source=qr&igsh=MXhtOGhka2ttNDdtMA==" target="_blank"><img  class="img"  src="photos/me.jpg" alt=""/></a>
              </div>
              <div class="col-1-non-swipeable" id="col-1">
-                <h6>Hi, i'm  <span >Aravinthan</span>, an Entertainer</h6>
+                <h6>Hi, i'm  <span >Aravinthan</span>, an Entertainer  <p>not a nerd</p></h6>
            </div>
            
            
@@ -194,7 +194,7 @@ through my art, bringing ideas to life.
 
                     </ul>
 </div>
-                <span class="titleForMobile"> <p> Projects </p> </span>
+                <!-- <span class="titleForMobile"> <p> Projects </p> </span>
                 <div class="tab-contents" id="projects">
 
                     <div class="project-tab">
@@ -212,70 +212,13 @@ through my art, bringing ideas to life.
 
                     </div>
 
-                </div>
+                </div> -->
              </div>
         </div>
     
         <!-- <div class="disco-container" id="disco"></div> -->
         
-<svg id="scene" viewBox="0 0 800 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-        <feMerge>
-          <feMergeNode in="blur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-  
-    <!-- Desert Base -->
-    <rect width="800" height="600" fill="black" />
-    <path fill="#222" d="M0 400 Q200 380 400 400 T800 400 V600 H0 Z"/>
-    <path fill="#333" d="M0 420 Q250 390 500 420 T800 430 V600 H0 Z"/>
-  
-    <!-- Wind Particles -->
-    <g>
-      <circle class="sand-blow" cx="40" cy="500" r="2" fill="white" style="animation-delay: 0s;"></circle>
-      <circle class="sand-blow" cx="120" cy="520" r="1.5" fill="white" style="animation-delay: 2s;"></circle>
-      <circle class="sand-blow" cx="300" cy="510" r="1" fill="white" style="animation-delay: 4s;"></circle>
-      <circle class="sand-blow" cx="500" cy="530" r="2" fill="white" style="animation-delay: 6s;"></circle>
-      <circle class="sand-blow" cx="700" cy="525" r="1.2" fill="white" style="animation-delay: 8s;"></circle>
-    </g>
-  
-    <!-- 🌟 Main Character (Cloaked Man) -->
-    <g class="main-character" transform="translate(400, 380)">
-      <!-- Head -->
-      <circle cx="0" cy="0" r="8" fill="white" filter="url(#glow)" />
-  
-      <!-- Cloak Hood -->
-      <path d="M-10 -5 Q0 -20 10 -5 Q8 5 -8 5 Z" fill="white" opacity="0.9" />
-  
-      <!-- Cloak Body -->
-      <path d="M-12 5 Q0 40 0 70 Q0 40 12 5 Z" fill="white" opacity="0.8" />
-  
-      <!-- Arms -->
-      <path d="M-8 20 Q-4 35 0 40 Q4 35 8 20" stroke="white" stroke-width="2" fill="none" />
-  
-      <!-- Legs stepping forward -->
-      <line x1="-4" y1="70" x2="-6" y2="90" stroke="white" stroke-width="2"/>
-      <line x1="4" y1="70" x2="6" y2="85" stroke="white" stroke-width="2"/>
-  
-      <!-- Ground Shadow -->
-      <ellipse cx="0" cy="92" rx="10" ry="3" fill="white" opacity="0.2"/>
-    </g>
-  
-    <!-- Trees -->
-    <g stroke="white" stroke-width="2" fill="none">
-      <path d="M100 500 Q90 470 105 440 Q95 420 110 400" />
-      <path d="M105 440 Q100 420 115 410" />
-      <path d="M105 440 Q108 430 120 420" />
-  
-      <path d="M700 500 Q710 460 690 430 Q705 410 690 390" />
-      <path d="M690 430 Q695 415 680 400" />
-      <path d="M690 430 Q700 420 710 410" />
-    </g>
-  </svg>
+
 
     <div  class="contact" id="contact">
           <div class="container">
@@ -306,6 +249,64 @@ through my art, bringing ideas to life.
               </div> 
           </div>
     </div>
+    <svg id="scene" viewBox="0 0 800 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+      
+        <!-- Desert Base -->
+        <rect width="800" height="600" fill="black" />
+        <path fill="#222" d="M0 400 Q200 380 400 400 T800 400 V600 H0 Z"/>
+        <path fill="#333" d="M0 420 Q250 390 500 420 T800 430 V600 H0 Z"/>
+      
+        <!-- Wind Particles -->
+        <g>
+          <circle class="sand-blow" cx="40" cy="500" r="2" fill="white" style="animation-delay: 0s;"></circle>
+          <circle class="sand-blow" cx="120" cy="520" r="1.5" fill="white" style="animation-delay: 2s;"></circle>
+          <circle class="sand-blow" cx="300" cy="510" r="1" fill="white" style="animation-delay: 4s;"></circle>
+          <circle class="sand-blow" cx="500" cy="530" r="2" fill="white" style="animation-delay: 6s;"></circle>
+          <circle class="sand-blow" cx="700" cy="525" r="1.2" fill="white" style="animation-delay: 8s;"></circle>
+        </g>
+      
+        <!-- 🌟 Main Character (Cloaked Man) -->
+        <g class="main-character" transform="translate(400, 380)">
+          <!-- Head -->
+          <circle cx="0" cy="0" r="8" fill="white" filter="url(#glow)" />
+      
+          <!-- Cloak Hood -->
+          <path d="M-10 -5 Q0 -20 10 -5 Q8 5 -8 5 Z" fill="white" opacity="0.9" />
+      
+          <!-- Cloak Body -->
+          <path d="M-12 5 Q0 40 0 70 Q0 40 12 5 Z" fill="white" opacity="0.8" />
+      
+          <!-- Arms -->
+          <path d="M-8 20 Q-4 35 0 40 Q4 35 8 20" stroke="white" stroke-width="2" fill="none" />
+      
+          <!-- Legs stepping forward -->
+          <line x1="-4" y1="70" x2="-6" y2="90" stroke="white" stroke-width="2"/>
+          <line x1="4" y1="70" x2="6" y2="85" stroke="white" stroke-width="2"/>
+      
+          <!-- Ground Shadow -->
+          <ellipse cx="0" cy="92" rx="10" ry="3" fill="white" opacity="0.2"/>
+        </g>
+      
+        <!-- Trees -->
+        <!-- <g stroke="white" stroke-width="2" fill="none">
+          <path d="M100 500 Q90 470 105 440 Q95 420 110 400" />
+          <path d="M105 440 Q100 420 115 410" />
+          <path d="M105 440 Q108 430 120 420" />
+      
+          <path d="M700 500 Q710 460 690 430 Q705 410 690 390" />
+          <path d="M690 430 Q695 415 680 400" />
+          <path d="M690 430 Q700 420 710 410" />
+        </g> -->
+      </svg>
 </div>
 
      <script>
@@ -344,7 +345,7 @@ through my art, bringing ideas to life.
             imgdiv[0].classList.toggle("toggling")
             const image = document.getElementsByClassName("img")
             image[0].classList.toggle("imagetoggling")
-            console.log(image[0].style)
+            // console.log(image[0].style)
 
             const about = document.getElementById("about");
             const contacts = document.getElementById("contact")
@@ -369,7 +370,7 @@ through my art, bringing ideas to life.
             imgdiv[0].classList.toggle("toggling")
             const image = document.getElementsByClassName("img")
             image[0].classList.toggle("imagetoggling")
-            console.log(image[0].style)
+            // console.log(image[0].style)
             
 
             if(col_one.style.display !== "none"){
@@ -394,7 +395,6 @@ through my art, bringing ideas to life.
         }
 
         const opentab= (value)=>{
-             console.log("hi");
             const tablinks = document.getElementsByClassName("tab-links")
             const tabcontents = document.getElementsByClassName("tab-contents")
 

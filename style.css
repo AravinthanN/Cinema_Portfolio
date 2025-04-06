@@ -6,15 +6,19 @@
     scroll-behavior: smooth;
 }
 body{
+    width: 100%;
     background-color: black;
     color:antiquewhite;
     scroll-behavior: smooth;
 }
 
 .portfolioContainer{
-    /* width: 100vw; */
+    width: 100%;
     padding: 10px 15px;
     height:900px;
+}
+.portfolioContainer .row-2{
+    width: 100%;
 }
 ul {
     list-style-type: none;
@@ -95,6 +99,18 @@ span{
     margin-top: 50px;
 
 }
+.row-2 .col-1 h5 {
+    position: relative;
+}
+
+.row-2 .col-1 h5 .tagline {
+    color:#ebeaea;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+}
 .row-2 .col-1{
     width:50%;
 }
@@ -102,14 +118,15 @@ span{
     display:none;
 }
 .col-2{
-    
     width:330px;
     height:330px;
     border-radius:50%;
     text-align: center;
     background-color: aqua;
-    border:5px solid rgb(0, 255, 21);
-    box-shadow: 0px 0px 10px rgb(59, 247, 2);
+      /* border: 5px solid rgb(0, 255, 21); */
+      border: 5px solid #fefcfc;
+      /* box-shadow: 0px 0px 10px rgb(59, 247, 2); */
+      box-shadow: 0px 0px 10px #fefcfc;
     z-index:0;
     transition: all 1.5s ease;
     overflow: hidden;
@@ -562,6 +579,9 @@ form .btn1{
 /* -------------------small screens------------------ */
 
 @media only screen and (max-width:600px){
+    svg{
+        display:none;
+    }
    .row-1{
     height:50px
    }
@@ -658,8 +678,10 @@ form .btn1{
         border-radius: 50%;
         text-align: center;
         background-color: aqua;
-        border: 5px solid rgb(0, 255, 21);
-        box-shadow: 0px 0px 10px rgb(59, 247, 2);
+        /* border: 5px solid rgb(0, 255, 21); */
+        border: 5px solid #fefcfc;
+        /* box-shadow: 0px 0px 10px rgb(59, 247, 2); */
+        box-shadow: 0px 0px 10px #fefcfc;
         transition: all 1.5s ease;
         overflow: hidden;
       }
@@ -838,6 +860,7 @@ form .btn1{
     svg {
         width: 100%;
         height: 50%;
+        margin-top: 50px;
         display: block;
         filter: grayscale(1);
       }
@@ -886,3 +909,175 @@ form .btn1{
         animation: tumbleweed 20s linear infinite;
         opacity: 0.3;
       }
+
+      @media only screen and (max-width:600px) {
+        /* Logo + Nav */
+        .row-1 {
+            height: 60px;
+            padding: 10px;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        video {
+            width: 130px;
+            height: auto;
+        }
+    
+        #bar {
+            display: inline;
+            margin: 10px;
+        }
+    
+        nav ul {
+            width: 180px;
+            padding-top: 60px;
+        }
+    
+        nav ul li {
+            margin: 20px 15px;
+            font-size: 18px;
+        }
+    
+        nav ul li a {
+            font-size: 18px;
+        }
+    
+        /* Row-2 content layout */
+        .row-2 {
+            flex-direction: column;
+            gap: 30px;
+            margin: 20px 0;
+        }
+    
+        .col-2-non-swipeable {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+
+        }
+    
+        .col-2-non-swipeable img {
+            /* width: 100%; */
+            height: 260px;
+        }
+    
+        .col-1-non-swipeable {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .col-1-non-swipeable h5 {
+            font-size: 36px;
+            line-height: 1.2;
+        }
+    
+        /* About section */
+        .about {
+            width: 100%;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+    
+        .about-me {
+            font-size: 24px;
+            margin: 10px 0;
+            text-align: center;
+        }
+    
+        .tab {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .tab-links {
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        .tab-contents ul li {
+            margin: 20px 0;
+            font-size: 15px;
+        }
+    
+        /* Skills */
+        .skill-title h4 {
+            font-size: 16px;
+        }
+    
+        .barforskill {
+            height: 12px;
+        }
+    
+        /* Projects */
+        .project-tab {
+            width: 100%;
+            max-width: 320px;
+            margin: auto;
+        }
+    
+        .project-content {
+            font-size: 13px;
+            padding: 0 20px;
+        }
+    
+        /* Contact */
+        #contact {
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+        .contact-left, .contact-right {
+            width: 100%;
+        }
+    
+        .contact-left p {
+            font-size: 14px;
+        }
+    
+        .contact-right form input,
+        .contact-right form textarea {
+            font-size: 16px;
+        }
+    
+        .btn.btn1 {
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* Social Icons */
+        .social-icons {
+            justify-content: center;
+        }
+    
+        .social-icons a {
+            font-size: 20px;
+        }
+    
+        /* General Tweaks */
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+    
+        .works-text {
+            font-size: 16px;
+            white-space: normal;
+            text-align: center;
+        }
+    
+        .portfolioContainer {
+            height: auto;
+            padding: 15px 10px;
+        }
+    
+        .titleForMobile {
+            display: block;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 22px;
+        }
+    }
+    
+      
