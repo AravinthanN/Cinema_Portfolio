@@ -1,11 +1,16 @@
 function animateBars() {
     const bars = document.querySelectorAll('.skill-tab');
-
+if(!bars){
+  return
+}
     bars.forEach(tab => {
       const bar = tab.querySelector('.barforskill span');
-      const percent = tab.querySelector('h6').getAttribute('data-percent');
+      const percent = tab.querySelector('h6')?.getAttribute('data-percent');
 
       // Reset to 0 then animate again
+      if(!bar){
+        return
+      }
       bar.style.width = '0%';
       setTimeout(() => {
         bar.style.width = percent + '%';
