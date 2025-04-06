@@ -30,7 +30,7 @@ video{
      width: 200px;
      height: 100px;
      object-fit: cover;
-      pointer-events: none;
+      /* pointer-events: none; */
 }
 .row-1{
     display:flex;
